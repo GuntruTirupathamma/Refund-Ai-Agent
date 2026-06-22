@@ -1,0 +1,362 @@
+[
+  {
+    "customer_id": "CUST-1001",
+    "name": "Priya Raman",
+    "email": "priya@example.com",
+    "loyalty_tier": "gold",
+    "account_created": "2021-03-14",
+    "refunds_last_12_months": 1,
+    "orders": [
+      {
+        "order_id": "ORD-1001",
+        "item": "Wireless Headphones",
+        "category": "electronics",
+        "amount": 129.99,
+        "purchase_date": "2026-06-08",
+        "delivery_date": "2026-06-12",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": false,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1002",
+    "name": "Marcus Bell",
+    "email": "marcus@example.com",
+    "loyalty_tier": "silver",
+    "account_created": "2020-07-02",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1002",
+        "item": "Running Shoes",
+        "category": "clothing",
+        "amount": 89.0,
+        "purchase_date": "2026-05-01",
+        "delivery_date": "2026-05-04",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": true,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1003",
+    "name": "Elena Sokolova",
+    "email": "elena@example.com",
+    "loyalty_tier": "bronze",
+    "account_created": "2023-11-20",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1003",
+        "item": "Clearance Winter Jacket",
+        "category": "clothing",
+        "amount": 59.99,
+        "purchase_date": "2026-06-05",
+        "delivery_date": "2026-06-09",
+        "delivery_status": "delivered",
+        "final_sale": true,
+        "opened": true,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1004",
+    "name": "David Okafor",
+    "email": "david@example.com",
+    "loyalty_tier": "gold",
+    "account_created": "2019-02-11",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1004",
+        "item": "Premium Course Download",
+        "category": "digital",
+        "amount": 199.0,
+        "purchase_date": "2026-06-15",
+        "delivery_date": "2026-06-15",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": false,
+        "defective": false,
+        "accessed": true,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1005",
+    "name": "Sara Lindqvist",
+    "email": "sara@example.com",
+    "loyalty_tier": "silver",
+    "account_created": "2022-09-30",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1005",
+        "item": "Bluetooth Speaker",
+        "category": "electronics",
+        "amount": 74.5,
+        "purchase_date": "2026-06-01",
+        "delivery_date": "2026-06-04",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": false,
+        "defective": false,
+        "accessed": false,
+        "refunded": true
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1006",
+    "name": "Tomas Riveiro",
+    "email": "tomas@example.com",
+    "loyalty_tier": "bronze",
+    "account_created": "2024-01-05",
+    "refunds_last_12_months": 4,
+    "orders": [
+      {
+        "order_id": "ORD-1006",
+        "item": "Phone Case",
+        "category": "accessories",
+        "amount": 24.99,
+        "purchase_date": "2026-06-10",
+        "delivery_date": "2026-06-13",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": true,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1007",
+    "name": "Aisha Khan",
+    "email": "aisha@example.com",
+    "loyalty_tier": "platinum",
+    "account_created": "2018-06-22",
+    "refunds_last_12_months": 1,
+    "orders": [
+      {
+        "order_id": "ORD-1007",
+        "item": "4K OLED Television",
+        "category": "electronics",
+        "amount": 1499.0,
+        "purchase_date": "2026-06-06",
+        "delivery_date": "2026-06-10",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": false,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1008",
+    "name": "Liam Murphy",
+    "email": "liam@example.com",
+    "loyalty_tier": "silver",
+    "account_created": "2021-12-01",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1008",
+        "item": "Gaming Mouse",
+        "category": "electronics",
+        "amount": 59.99,
+        "purchase_date": "2026-06-12",
+        "delivery_date": "2026-06-14",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": true,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1009",
+    "name": "Nadia Hassan",
+    "email": "nadia@example.com",
+    "loyalty_tier": "gold",
+    "account_created": "2020-04-18",
+    "refunds_last_12_months": 1,
+    "orders": [
+      {
+        "order_id": "ORD-1009",
+        "item": "Mechanical Keyboard",
+        "category": "electronics",
+        "amount": 119.0,
+        "purchase_date": "2026-06-13",
+        "delivery_date": "2026-06-15",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": true,
+        "defective": true,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1010",
+    "name": "Chen Wei",
+    "email": "chen@example.com",
+    "loyalty_tier": "bronze",
+    "account_created": "2023-05-09",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1010",
+        "item": "Standing Desk",
+        "category": "furniture",
+        "amount": 320.0,
+        "purchase_date": "2026-06-18",
+        "delivery_date": null,
+        "delivery_status": "in_transit",
+        "final_sale": false,
+        "opened": false,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1011",
+    "name": "Grace Adeyemi",
+    "email": "grace@example.com",
+    "loyalty_tier": "silver",
+    "account_created": "2022-02-14",
+    "refunds_last_12_months": 2,
+    "orders": [
+      {
+        "order_id": "ORD-1011",
+        "item": "Yoga Mat",
+        "category": "fitness",
+        "amount": 39.99,
+        "purchase_date": "2026-06-09",
+        "delivery_date": "2026-06-11",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": true,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1012",
+    "name": "Oliver Schmidt",
+    "email": "oliver@example.com",
+    "loyalty_tier": "gold",
+    "account_created": "2019-10-25",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1012",
+        "item": "Espresso Machine",
+        "category": "appliances",
+        "amount": 640.0,
+        "purchase_date": "2026-06-07",
+        "delivery_date": "2026-06-11",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": false,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1013",
+    "name": "Fatima Noor",
+    "email": "fatima@example.com",
+    "loyalty_tier": "bronze",
+    "account_created": "2024-03-30",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1013",
+        "item": "Cotton T-Shirt",
+        "category": "clothing",
+        "amount": 19.99,
+        "purchase_date": "2026-06-14",
+        "delivery_date": "2026-06-17",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": true,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1014",
+    "name": "James Carter",
+    "email": "james@example.com",
+    "loyalty_tier": "platinum",
+    "account_created": "2021-08-08",
+    "refunds_last_12_months": 0,
+    "orders": [
+      {
+        "order_id": "ORD-1014",
+        "item": "Smartwatch",
+        "category": "electronics",
+        "amount": 249.0,
+        "purchase_date": "2026-05-05",
+        "delivery_date": "2026-05-08",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": false,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  },
+  {
+    "customer_id": "CUST-1015",
+    "name": "Sofia Rossi",
+    "email": "sofia@example.com",
+    "loyalty_tier": "platinum",
+    "account_created": "2017-11-11",
+    "refunds_last_12_months": 1,
+    "orders": [
+      {
+        "order_id": "ORD-1015",
+        "item": "Designer Handbag",
+        "category": "accessories",
+        "amount": 780.0,
+        "purchase_date": "2026-06-16",
+        "delivery_date": "2026-06-19",
+        "delivery_status": "delivered",
+        "final_sale": false,
+        "opened": false,
+        "defective": false,
+        "accessed": false,
+        "refunded": false
+      }
+    ]
+  }
+]
