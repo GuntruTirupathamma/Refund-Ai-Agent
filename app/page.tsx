@@ -63,6 +63,19 @@ function fmtTime(ts: number): string {
   return new Date(ts).toLocaleTimeString([], { hour12: false });
 }
 
+function speak(text: string) {
+  try {
+    if (typeof window !== "undefined" && "speechSynthesis" in window && text) {
+      window.speechSynthesis.cancel();
+      const u = new SpeechSynthesisUtterance(text);
+      u.rate = 1;
+      window.speechSynthesis.speak(u);
+    }
+  } catch {
+    /* speech synthesis not available */
+  }
+}
+
 export default function ConsolePage() {
   const [messages, setMessages] = useState<Msg[]>([
     {
@@ -176,7 +189,11 @@ export default function ConsolePage() {
       setMessages((prev) => [...prev, ...turn]);
       if (data.audioBase64 && audioRef.current) {
         audioRef.current.src = `data:audio/wav;base64,${data.audioBase64}`;
-        void audioRef.current.play().catch(() => undefined);
+        void audioRef.current.play().catch(() => speak(data.reply));
+      } else if (data.reply) {
+        // Groq TTS unavailable: fall back to the browser's speech synthesis so
+        // the spoken reply still works during the demo.
+        speak(data.reply);
       }
     } catch {
       setMessages((prev) => [...prev, { role: "assistant", content: "Voice request failed. Please try again." }]);
