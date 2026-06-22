@@ -1,12 +1,22 @@
 import Groq from "groq-sdk";
 
-if (!process.env.GROQ_API_KEY) {
-  // Not throwing here so `next build` can run without a key. Routes will
-  // surface a clear error at request time if the key is missing.
-  console.warn("[groq] GROQ_API_KEY is not set. Add it to .env.local before running.");
-}
+// Lazily create the Groq client so importing this module never throws at build
+// time (Vercel collects page data without env vars). The client is created on
+// first use at request time, when GROQ_API_KEY is available.
+let _client: Groq | null = null;
 
-export const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+export function getGroq(): Groq {
+  if (!_client) {
+    const apiKey = process.env.GROQ_API_KEY;
+    if (!apiKey) {
+      throw new Error(
+        "GROQ_API_KEY is not set. Add it to .env.local locally, or to your Vercel project's Environment Variables."
+      );
+    }
+    _client = new Groq({ apiKey });
+  }
+  return _client;
+}
 
 // Main reasoning + tool-calling model.
 export const CHAT_MODEL = "llama-3.3-70b-versatile";

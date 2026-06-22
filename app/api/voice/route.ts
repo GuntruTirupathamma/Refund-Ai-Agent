@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { toFile } from "groq-sdk";
-import { groq, STT_MODEL, TTS_MODEL, TTS_VOICE } from "@/lib/groq";
+import { getGroq, STT_MODEL, TTS_MODEL, TTS_VOICE } from "@/lib/groq";
 import { runAgent, SimpleMessage } from "@/lib/agent";
 import { newTurnId } from "@/lib/logstore";
 
@@ -22,6 +22,8 @@ export async function POST(req: NextRequest) {
     const history: SimpleMessage[] = historyRaw
       ? (JSON.parse(historyRaw.toString()) as SimpleMessage[])
       : [];
+
+    const groq = getGroq();
 
     // 1. Transcribe with Groq Whisper.
     const buf = Buffer.from(await audio.arrayBuffer());

@@ -4,7 +4,7 @@ import type {
   ChatCompletionMessageParam,
   ChatCompletionMessage,
 } from "groq-sdk/resources/chat/completions";
-import { groq, CHAT_MODEL } from "./groq";
+import { getGroq, CHAT_MODEL } from "./groq";
 import { tools, runTool } from "./tools";
 import { log } from "./logstore";
 
@@ -70,6 +70,8 @@ export async function runAgent(
 ): Promise<AgentResult> {
   const lastUser = [...history].reverse().find((m) => m.role === "user");
   if (lastUser) log(turnId, "user_message", "Customer", lastUser.content);
+
+  const groq = getGroq();
 
   const messages: ChatCompletionMessageParam[] = [
     { role: "system", content: systemPrompt() },
